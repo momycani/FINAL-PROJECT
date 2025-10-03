@@ -9,7 +9,7 @@
 }
 
 .container{
-    padding: 84px 0;
+    padding: 92px 0;
 }
 
 .row{
@@ -175,9 +175,10 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 1000px;
-    margin-left: 64px;
+    margin: 0 auto;
 }
 
 .section__tag{
@@ -351,38 +352,48 @@ p{
 
 #values .row{
     display: flex;
-    justify-content: center;
-    flex-direction: column;   
+    justify-content: center;    
 }
 
 .values__description{
     width: 40%;
     padding: 0 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
 }
 
 .values__list{
-     margin;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: row;    
 }
 
-.value:nth-of-type(1){
-    margin: 36px;
+.value{
+    flex-direction: column;
 }
 
 .value__title{
     display: flex;
     align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .value__img--wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48px;
-    height: 48px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
+}
+
+.value :nth-child(1)
+.value__img--wrapper{
+    background-color: #9ae6b4;
+}
+
+.value :nth-child(2)
+.value__img--wrapper{
+    background-color: #feb2b2;
 }
 
 .value__img{
@@ -390,20 +401,20 @@ p{
     height: 28px;
     align-items: center;
 }
-.value:nth-child(1)
-.value__img--wrapper{
-    background-color: #9ae6b4;
+
+.value__name{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 16px;
 }
 
-value:nth-child(2)
-.value__img--wrapper{
-    background-color: #feb2b2;
+#values .btn{
+    margin-top: 32px;
 }
-
 .values__img{
-    width: 80%;
-    padding: 36px 0 36px 48px;
+    width: 40%;
 }
 
+/* PRICING */
 
 
