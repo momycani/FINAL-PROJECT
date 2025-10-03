@@ -175,6 +175,9 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: 64px;
 }
 
 .section__tag{
@@ -191,6 +194,7 @@ p{
     font-size: 16px;
     max-width: 560px;
     text-align: center;
+    padding-bottom: 36px;
 }
 
 .features{
@@ -204,7 +208,7 @@ p{
 }
 
 .feature__row{
-    display: flex;
+   display: flex;
     align-items: flex-start;
     padding: 32px 24px;
 }
@@ -289,14 +293,18 @@ p{
 /* STEPS */
 
 #steps .row{
+    margin: 48px 36px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.steps__img--wrapper{}
+.steps__img--wrapper{
+    width: 50%;
+    position: relative;
+}
 
 .steps__img{
-    width: 80%;   
+    width: 90%;   
 }
 
 .steps__grid{}
@@ -304,36 +312,98 @@ p{
 .steps__description{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    padding: 0 16px;
+    margin: 48px 0;
+    width: 50%;
+    padding: 84px 16px;
 }
 
 .steps__list{}
 
 .step{
     display: flex;
-    flex-direction: column;
+    margin-top: 32px;
 }
 
 .step__number{
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 500;
-    color: rgba(121, 69, 224, 0.365);
+    color: #bfbfbf;
 }
 
 .step__description{
     display: flex;
     flex-direction: column;
-    padding: 16px 0;
+    margin-left: 24px;
 }
 
 .step__title{
-    font-size: 24px;
-    margin: 8px 0;
+    font-size: 24px;    
 }
 
 .step__para{
     font-size: 16px;
-    color: rgb(36, 62, 99);
+    color: #808080;
+    padding: 12px 0;
     line-height: 2;
 }
+
+/* VALUES */
+
+#values .row{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.values__description{
+    width: 40%;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.values__list{
+     margin;
+}
+
+.value:nth-of-type(1){
+    margin: 36px;
+}
+
+.value__title{
+    display: flex;
+    align-items: center;
+}
+
+.value__img--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.value__img{
+    width: 28px;
+    height: 28px;
+    align-items: center;
+}
+.value:nth-child(1)
+.value__img--wrapper{
+    background-color: #9ae6b4;
+}
+
+value:nth-child(2)
+.value__img--wrapper{
+    background-color: #feb2b2;
+}
+
+.values__img{
+    width: 80%;
+    padding: 36px 0 36px 48px;
+}
+
+
+
