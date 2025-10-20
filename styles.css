@@ -25,6 +25,7 @@ body{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 32px;
 }
 
 .img{
@@ -47,6 +48,7 @@ a:hover{
 /* LANDING */
 
 .nav__row{
+    margin: 16px 36px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,6 +157,7 @@ li{
 
 .menu__list{
     padding: 32px 0;
+    font-size: 16px;
 }
 
 .menu__link {
@@ -368,15 +371,17 @@ p{
     border-radius: 2px;
     position: relative;
     display: flex;
-    z-index: 3;
+   
 }
 
-.quality__img{
+.quality__img, .front{
     width: 80%;
     padding: 36px 0 36px 48px;
+    position: relative;
+     z-index: 3; /* Above the grid */
 }
 
-.quality__grid{
+.quality__grid, .back{
     transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
     width: 80px;
     height: 80px;
@@ -385,7 +390,7 @@ p{
     bottom: 0;
     fill: rgb(100, 21, 255);
     color: rgba(100, 21, 255, .36);
-    z-index: -2;
+    z-index: -2; /* Behind the image */
     display: block;
 }
 
@@ -522,9 +527,9 @@ p{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1000px;
-    padding-left: 96px;
-    margin-left: 96px;
+    margin: 0 auto;
+    padding: 0 32px;
+    
 }
 
 .pricing__section--tag{
@@ -684,6 +689,7 @@ p{
 .testimonial__bottom{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .testimonial__profile{
@@ -695,7 +701,6 @@ p{
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 8px 16px;
     margin-bottom: 28px;
 }
 
@@ -703,7 +708,7 @@ p{
     padding-left: 16px;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 24px 20px;
 }
 
 .testimonial__name{
@@ -719,6 +724,7 @@ p{
 .testimonial__buttons{
     display: flex;
     align-items: center;
+    padding: 0 0 28px 0;
 }
 
 .divider{
@@ -729,8 +735,7 @@ p{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: none;
-
+    border: none; 
 }
 
 /* START */
@@ -795,12 +800,14 @@ p{
 
 .footer__container{
     width: 100%;
+    max-width: 1200px;
     height: 500px;
     background-color: rgb(100, 21, 255);
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .footer__row{
@@ -887,7 +894,7 @@ p{
     }
 
     .btn__menu{
-        display: block;            
+        display: block;   
     }
 
     .nav__links{
@@ -998,13 +1005,14 @@ p{
         width: 100%;
         padding: 32px 16px;
         margin: 0;  
+        display: flex;
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .step{
-        flex-direction: column;
-               
+        flex-direction: column;               
         margin: 16px 0;
         justify-content: center;
         padding: 12px;
@@ -1201,27 +1209,40 @@ p{
             width: 100%;
             margin: 16px 0;
         }
+
         #testimonials .row{
             flex-direction: column;
         }
-        .testimonials__img, .testimonials__descriptions{
+       
+        .testimonials__descriptions {
             width: 100%;
             padding: 0;
             margin: 0;
             text-align: center;
         }
+
         .testimonial__bottom{
             flex-direction: column;
             align-items: center;
         }
+
         .testimonial__profile{
             flex-direction: column;
             align-items: center;
         }
-        .testimonial__details{
-            padding: 16px 0 0 0;
+
+         .testimonials__img{
+            width: 100%;
+            padding: 0;
+            margin: 0;
             text-align: center;
         }
+               
+        .testimonial__details{
+            padding: 0 0 16px 0;
+            text-align: center;
+        }
+       
         .testimonial__buttons{
             margin-top: 16px;
         }
