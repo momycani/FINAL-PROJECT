@@ -429,12 +429,13 @@ p{
     font-size: 32px;
     font-weight: 500;
     color: #bfbfbf;   
+    padding-right: 16px;
 }
 
 .step__description{
     display: flex;
     flex-direction: column;
-    margin-left: 24px;
+   
 }
 
 .step__title{
