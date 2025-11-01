@@ -1016,6 +1016,15 @@ p{
         padding: 12px;
     }
 
+    .step__description{
+        padding: 16px 0 0 0;
+        text-align: center;
+    }
+
+    .step__number{
+        margin-left: 16px;
+    }
+
     .values{
         flex-direction: column;
         align-items: center;
